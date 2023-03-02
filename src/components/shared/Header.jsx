@@ -20,7 +20,7 @@ const Header = () => {
     }
     const handleclose = e => {
         setmodal(true)
-        dispatch(setOpenClose(openClose))
+        dispatch(setOpenClose(true))
     }
 
 

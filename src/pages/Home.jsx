@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import CardProduct from '../components/home/CardProduct'
 import { getAllProductsThunk, searchProductThunk } from '../store/slices/products.slice'
 import './styles/home.css'
@@ -40,16 +41,16 @@ const Home = () => {
         const from = Number(e.target.from.value.trim())
         const to = Number(e.target.to.value.trim())
 
-        console.log({from,to});
+        console.log({ from, to });
 
         if (from && to) {
-            setfromTo({from, to})
-        }else if (from && to) {
-            setfromTo({ from, to: Infinity})
-        }else if (!from && to ) {
-            setfromTo({from:0 , to})
-        }else{
-            setfromTo({from : 0, to: Infinity})
+            setfromTo({ from, to })
+        } else if (from && to) {
+            setfromTo({ from, to: Infinity })
+        } else if (!from && to) {
+            setfromTo({ from: 0, to })
+        } else {
+            setfromTo({ from: 0, to: Infinity })
         }
     }
     const filterProduct = product => +product.price >= fromTo.from && +product.price <= fromTo.to
@@ -68,7 +69,7 @@ const Home = () => {
                         <h3 className='homeCategory__h3'>Price <i className='bx bx-chevron-down' ></i></h3>
                     </header>
                     <form className='formFilter__price' onSubmit={hamdleSubmitPrice}>
-                        <div className='formFilter__div'> 
+                        <div className='formFilter__div'>
                             <label className='formFilte__label' htmlFor="from">From :</label>
                             <input className='formFilte__input' type="number" id='from' />
                         </div>
@@ -105,6 +106,16 @@ const Home = () => {
                             />
                         ))
                 }
+            </div>
+            <div className='dates'>
+                <h1>Creado Por Emerson Wilson</h1>
+                <h2> Contact me :</h2>
+                <ul className='dates__ul'>
+
+                    <li className='dates__li' ><Link to = "https://github.com/emereson"><i className=' icon__date bx bxl-github'></i></Link></li>
+                    <li className='dates__li'><Link to = "https://www.linkedin.com/in/emerson-yujra-997b52260/"><i className=' icon__date bx bxl-linkedin' ></i></Link></li>
+                    <li className='dates__li'><Link to = "https://app.netlify.com/teams/emereson/overview"><i className=' icon__date bx bxl-netlify' ></i></Link></li>
+                </ul>
             </div>
         </div>
     )

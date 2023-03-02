@@ -116,6 +116,7 @@
     box-shadow:0 0 0.6em 0.1em var(--text-color-light);
 }
 .formFilte__btn{
+    cursor: pointer;
     font-size: 1.1em;
     font-weight: 700;
     padding: 0.5em;
@@ -132,4 +133,38 @@
         justify-content: center;
         align-items: center;
     }
+}
+.dates{
+    height: 14em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    flex-direction: column;
+    gap: 1.5em;
+    color: var(--card-color);
+    max-width: 1400px;
+}
+.dates h1{
+    font-weight: 900;
+    text-shadow: 0 0 0.3em var(--title-color);
+}
+.dates h2{
+    font-weight: 900;
+    text-shadow: 0 0 0.3em var(--title-color);
+}
+.dates__ul{
+    display: flex;
+    justify-content: center;
+    gap: 2.9em;
+}
+.icon__date{
+    font-size: 2.8em;
+    cursor: pointer;
+    color: var(--card-color);
+    text-shadow: 0 0 0.3em var(--title-color);
+}
+.icon__date:hover{
+    scale: 1.2;
+    color: var(--title-color);
 }

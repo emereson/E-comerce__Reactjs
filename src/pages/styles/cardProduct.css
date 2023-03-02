@@ -26,7 +26,9 @@
     max-height: 100%;
     cursor: pointer;
 }
-
+.cardProduct__img1:hover{
+    scale: 1.15;
+}
 /* .cardProduct__img2 {
     position: absolute;
     width: auto;
@@ -126,4 +128,7 @@
 }
 .bxs-cart-add{
     cursor: pointer;
+}
+.bxs-cart-add:hover{
+    scale: 1.15;
 }
