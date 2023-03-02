@@ -1,0 +1,47 @@
+.purchasesPage__conainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding-top: 5.5em;
+}
+.purchasesCard__article{
+    max-width: 600px;
+    width: 90%;
+    height: 6em;
+    background-color: var(--card-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0 0 0.6em 0.1em var(--button-color),0 0 0.6em 0.1em var(--text-color-light);
+}
+.purchasesCard__header{
+    width: 7em ;
+    padding: 0.8em;
+    height: 100%;
+}
+.purchasesCard__img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+.purchasesCard__info{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
+    padding: 0.5em 0.5em;
+}
+.purchasesCard__h3{
+    font-size: 0.6em;
+    font-weight: 900;
+}
+.purchasesCard__quantity-p{
+    font-size: 0.7em;
+    padding-top: 0.2em;
+    font-weight: 700;
+    color: var(--border-color);
+}

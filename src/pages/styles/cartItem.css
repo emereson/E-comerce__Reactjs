@@ -1,0 +1,131 @@
+.cart__container{
+    top: 3.5em;
+    position: fixed;
+    right: 0;
+    background-color: var(--border-color);
+    z-index: 100;
+    width: 100%;
+    max-width: 450px;
+    height: 100vh;
+    padding-top: 3em;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.cart__close{
+    display: none;
+}
+.cart__container-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:  3em;
+    padding: 0em  0em 20em;
+    margin: 0 auto;
+
+}
+.cart__article{
+    width: 22em;
+    display: flex;
+    background-color: var(--card-color);
+    height: 13em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.6em 0.1em var(--border-color),0 0 0.6em 0.1em var(--text-color-light);
+}
+.cart__header{
+    width: 40%;
+    padding:0.5em ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--button-color-alt) ;
+    border-radius: 0.2em;
+}
+.cart__image{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+.cart__info{
+    width: 60%;
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8em;
+}
+.cart__marca{
+    color: var(--title-color);
+    font-size: 0.8em;
+    font-weight: 800;
+}
+.cart__name{
+    color: var(--border-color);
+    font-size: 1em;
+    margin-top: -1em;
+    font-weight: 800;
+}
+.cart__li{
+    margin-left: 0.5em;
+}
+.cart__span{
+    color: var(--button-color-alt);
+    font-weight: 900;
+    font-size: 0.7em;
+}
+.cart__span2{
+    color: var(--text-color);
+    font-weight: 800;
+    font-size: 0.7em;
+}
+.cart__btn{
+    margin-top: -2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1em;
+    width: 2.4em;
+    border-radius: 0.3em;
+    padding: 1em 0em;
+    position: relative;
+    left: 76%;
+    top: 7%;
+    font-size: 1em;
+    background-color: var(--border-color);
+}
+.bx-trash{
+    color: var(--card-color);
+    font-size: 1em;
+}
+.cart__footer{
+    position: fixed;
+    top: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-color);
+    height: 13%;
+    width: 100%;
+    max-width: 430px;
+    border-top: 1.5px solid var(--text-color-light);
+    border-radius: 1em 1em 0 0 ;
+}
+.cartTolal__span1{
+    color: var(--body-color);
+    font-weight: 800;
+}
+.cartTolal__btn{
+
+    background-color: var(--border-color);
+    color: var(--card-color);
+    font-weight: 800;
+    margin-top: 0.5em;
+    width: 6em;
+    height: 3.5em;
+    cursor: pointer;
+    border-radius: 1.3em;
+}

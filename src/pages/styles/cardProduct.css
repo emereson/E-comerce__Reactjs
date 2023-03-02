@@ -1,0 +1,129 @@
+.cardProduct__article {
+    background-color: var(--card-color);
+    display: flex;
+    flex-direction: column;
+    width: 13.5em;
+    height: 23.5em;
+    letter-spacing: 1px;
+    border-radius: 1em;
+    box-shadow: 0 0 0.6em 0.1em var(--button-color),0 0 0.6em 0.1em var(--text-color-light);
+}
+
+.cardProduct__header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 100%;
+    padding: 1em 1em;
+}
+
+.cardProduct__img1 {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+/* .cardProduct__img2 {
+    position: absolute;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    transition: all linear 0.7s;
+    opacity: 0;
+    top: 0.5em;
+
+}
+
+.cardProduct__img1:hover {
+    opacity: 0;
+    display: none;
+}
+
+.cardProduct__img2:hover {
+    opacity: 1;
+} */
+
+.cardProduct__section {
+    display: grid;
+    height: 55%;
+    grid-template-rows: 1fr 35%;
+    grid-template-columns: 1fr 30%;
+    grid-template-areas: "header header ";
+    padding: 0.5em;
+    justify-self: center;
+    align-items: center;
+    border-top: 0.1em solid var(--text-color-light);
+    border-radius: .5em .5em 0 0 ;
+}
+
+.cardProduct__section-header {
+    grid-area: header;
+    padding-right: 1em;
+}
+
+.cardProduct__h3 {
+    font-size: 0.8em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    color: var(--text-color);
+    font-weight: 800;
+}
+
+.cardProduct__h2 {
+    font-size: 0.9em;
+    color: var(--title-color);
+    font-weight: 900;
+    padding-right: 1em;
+}
+
+.cardProduct__div-price {
+    padding: 0 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardProduct__span-price {
+    font-size: 0.9em;
+    color: var(--title-color);
+    font-weight: 800;
+}
+
+.cardProduct__price {
+    margin: 0 auto;
+    padding-left: 0.5em;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: var(--text-color);
+    font-weight: 800;
+}
+
+.cardProduct__price::before {
+    content: '$';
+}
+
+.cardProduct__button {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--card-color);
+    background-color: var(--border-color);
+    border-radius: 0.4em;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0.1em;
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+.bxs-cart-add{
+    cursor: pointer;
+}

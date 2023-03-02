@@ -1,0 +1,180 @@
+
+.logged__page{
+    display: flex;
+    justify-content: center;
+}
+.logged__container{
+    background-color: var(--card-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    gap: 1em;
+    padding: 2em 0;
+    border-radius: 1em;
+    box-shadow: 0 0 0.6em 0.1em var(--button-color),0 0 0.6em 0.1em var(--text-color-light);
+}
+.logged__img{
+    width: 18em;
+}
+.logged__welcome{
+    font-size: 1.4em;
+    color: var(--border-color);
+    font-weight: 800;
+}
+.logged__name{
+    color: var(--body-color);
+    font-weight: 800;
+}
+.logged__btn-logout{
+    height: 2.5em;
+    border-radius: 1em;
+    padding: 0.2em 1em;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: var(--border-color);
+    color: var(--card-color);
+    
+}
+.logIn__page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logIn__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    background-color: var(--card-color);
+    padding: 3em 2em ;
+    gap: 1.2em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.6em 0.1em var(--button-color),0 0 0.6em 0.1em var(--text-color-light);
+}
+.logIn__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+}
+.logIn__h2{
+    color: var(--border-color);
+    font-weight: 900;
+}
+.logIn__input-email{
+    margin-left: 2.5em;
+}
+.logIn__input{
+    margin-left: 1.1em;
+}
+.logIn__input,.logIn__input-email{
+    height: 1.8em;
+    background-color:  var(--card-color);
+    border: 0.1px solid var(--card-color);
+    box-shadow: 0 0 0.2em 0 var(--button-color);
+    text-align: center;
+}
+.logIn__email{
+    color:var(--body-color);
+    font-weight: 800;
+}
+.logIn__password{
+    margin-left: -1em;
+    color:var(--body-color);
+    font-weight: 800;
+
+}
+.logIn__btn{
+    padding: 0.8em 1.5em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    font-weight: 800;
+    background-color: var(--border-color);
+    color: var(--card-color);
+}
+.logIn__btn:hover{
+    background-color: var(--body-color);
+}
+.logIn__btn-register{
+    background-color: var(--body-color);
+    padding: 0.8em 1.5em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    font-weight: 700;
+}
+.logIn__btn-register:hover{
+    background-color: var(--border-color);
+}
+
+.logIn__btn-register a{
+    color: var(--card-color);
+}
+.register__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.register__form{
+    background-color: var(--card-color);
+    margin-top: 15%;
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.6em 0.1em var(--button-color),0 0 0.6em 0.1em var(--text-color-light);
+}
+
+.register__form h2{
+    font-weight: 800;
+    margin-bottom: 1em;
+    color: var(--border-color);
+}
+.register__label{
+    color: var(--body-color);
+    font-weight: 800;
+    font-size: 1.1em;
+}
+.register__input1 ,.register__input2,.register__input3,.register__input4,.register__input5{
+    margin-left: 1.5em;
+    background-color:  var(--card-color);
+    border: 0.1px solid var(--card-color);
+    box-shadow: 0 0 0.2em 0 var(--button-color);
+    text-align: center;
+    height: 1.8em;
+}
+.register__input2{
+    margin-left: 1.5em;
+    text-align: center;
+}
+.register__input3{
+    margin-left: 4.4em;
+    text-align: center;
+}
+.register__input4{
+    margin-left: 1.7em;
+    text-align: center;
+}
+.register__input5{
+    margin-left: 3.6em;
+    text-align: center;
+}
+.register__btn{
+    margin-top: 2em;
+    background-color: var(--body-color);
+    padding: 0.8em 1.5em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--card-color);
+}
+.register__btn:hover{
+    background-color: var(--border-color);
+}
