@@ -16,7 +16,6 @@ const Header = () => {
     }
     const handleOpen = () => {
         setmodal(false)
-        dispatch(setOpenClose(true))
     }
     const handleclose = e => {
         setmodal(true)
@@ -24,7 +23,6 @@ const Header = () => {
     }
 
 
-    console.log(handleclose);
     let token = localStorage.getItem('token')
     return (
         <header className='nav__header'>

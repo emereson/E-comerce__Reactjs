@@ -41,7 +41,6 @@ const Home = () => {
         const from = Number(e.target.from.value.trim())
         const to = Number(e.target.to.value.trim())
 
-        console.log({ from, to });
 
         if (from && to) {
             setfromTo({ from, to })
@@ -112,9 +111,9 @@ const Home = () => {
                 <h2> Contact me :</h2>
                 <ul className='dates__ul'>
 
-                    <li className='dates__li' ><Link to = "https://github.com/emereson"><i className=' icon__date bx bxl-github'></i></Link></li>
-                    <li className='dates__li'><Link to = "https://www.linkedin.com/in/emerson-yujra-997b52260/"><i className=' icon__date bx bxl-linkedin' ></i></Link></li>
-                    <li className='dates__li'><Link to = "https://app.netlify.com/teams/emereson/overview"><i className=' icon__date bx bxl-netlify' ></i></Link></li>
+                    <li className='dates__li' ><Link to="https://github.com/emereson"><i className=' icon__date bx bxl-github'></i></Link></li>
+                    <li className='dates__li'><Link to="https://www.linkedin.com/in/emerson-yujra-997b52260/"><i className=' icon__date bx bxl-linkedin' ></i></Link></li>
+                    <li className='dates__li'><Link to="https://app.netlify.com/teams/emereson/overview"><i className=' icon__date bx bxl-netlify' ></i></Link></li>
                 </ul>
             </div>
         </div>
