@@ -6,6 +6,7 @@ import { getCartThunk } from '../store/slices/Cart.slice'
 import config from '../utils/getConfig'
 
 const CartPage = () => {
+    const [totalPrice, settotalPrice] = useState(0)
 
     const { cart, openClose } = useSelector(state => state)
 
